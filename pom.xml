@@ -45,15 +45,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
         </dependency>
+        <!-- Use Boot-managed MySQL driver and mark as runtime -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>RELEASE</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
         </dependency>
+        <!-- Pin wsdl4j to a stable version instead of RELEASE -->
         <dependency>
             <groupId>wsdl4j</groupId>
             <artifactId>wsdl4j</artifactId>
-            <version>RELEASE</version>
+            <version>1.6.3</version>
+        </dependency>
+        <!-- BCrypt for password hashing -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
         </dependency>
     </dependencies>
 
