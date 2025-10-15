@@ -14,7 +14,7 @@
     <name>Opdracht</name>
     <description>Opdracht</description>
     <properties>
-        <java.version>22</java.version>
+        <java.version>17</java.version>
         <vaadin.version>24.3.12</vaadin.version>
     </properties>
     <dependencyManagement>
@@ -61,6 +61,13 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-crypto</artifactId>
+        </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
